@@ -1,0 +1,21 @@
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background: #f8f9fa;
+    font-weight: bold;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.card-footer {
+    background: #f8f9fa;
+    border-top: 2px solid #e9ecef;
+}

@@ -1,0 +1,98 @@
+.navbar {
+    background-color: #227B94; 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .navbar-brand {
+    color: #fff; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .nav-link {
+    color: #ffffff; 
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    text-decoration: none;
+  }
+  .nav-link.active {
+    color:#227B94; 
+    font-weight: bold;
+  }
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-control {
+    border: 2px solid #fff; 
+    border-radius: 20px; 
+    padding: 0.5rem 1rem;
+    font-size: 1rem; 
+    margin-right: 0.5rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .btn {
+    background-color: #227B94;
+    color: #ced5d7;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ffffff;
+    color: #227B94; 
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+    border-radius: 4px; 
+    width: 20px;
+    height: 3px;
+    position: relative;
+  }
+  
+  .navbar-toggler-icon::after,
+  .navbar-toggler-icon::before {
+    content: '';
+    background-color: #fff;
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: -6px;
+  }
+  
+  .navbar-toggler-icon::after {
+    top: 6px;
+  }
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .form-control {
+      margin-bottom: 0.5rem;
+    }
+  }
+  

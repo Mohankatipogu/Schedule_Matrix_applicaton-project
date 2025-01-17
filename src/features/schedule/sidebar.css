@@ -1,0 +1,19 @@
+.sidebar {
+    background: #2D2F36;
+    color: white;
+    width: 250px;
+}
+
+.sidebar button {
+    font-weight: bold;
+}
+
+.sidebar .btn-primary {
+    background-color: #227B94;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar .btn-primary:hover {
+    background-color: #185768;
+}

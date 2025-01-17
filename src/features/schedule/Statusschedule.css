@@ -1,0 +1,53 @@
+.status-schedule-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 30%;
+    margin: 0.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .status-header {
+    text-align: center;
+    background-color: #608bc1;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .task-item {
+    background-color: #006a67;
+    color: white;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .task-item:active {
+    cursor: grabbing;
+  }
+  
+  .delete-icon {
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-icon:hover {
+    color: darkred;
+    transform: scale(1.1);
+  }
+  
