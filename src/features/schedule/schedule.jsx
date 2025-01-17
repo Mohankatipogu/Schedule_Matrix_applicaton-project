@@ -26,12 +26,12 @@ function Schedule() {
     <div>
       <div id="back">
         <Header />
-        <div className="d-flex container-fluid m-5 container">
+        <div className="d-flex container-fluid m-5 container mgn">
           {/* Sidebar */}
-          <div className="sidebar vh-100 bg-dark text-light d-flex flex-column align-items-center p-4 rounded">
+          <div className="sidebar vh-100 bg-dark text-light d-flex flex-column align-items-center p-4 rounded side-header">
             <button
               type="button"
-              className="btn btn-outline-light mb-4 w-100"
+              className="btn btn-outline-light mb-4 w-100 add-schedule"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               style={{color:"white"}}

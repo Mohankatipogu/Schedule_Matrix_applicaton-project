@@ -12,3 +12,74 @@
 .modal-footer {
     border-top: none;
 }
+/* For tablets (screen width between 768px and 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .modal-content {
+      width: 80%; /* Reduce width for better fit */
+      margin: auto;
+      padding: 1rem;
+    }
+  
+    .modal-header {
+      font-size: 1.2rem; /* Adjust font size */
+      padding: 1rem;
+    }
+  
+    .modal-footer {
+      padding: 0.8rem;
+    }
+  }
+  
+  /* For large phones (screen width between 576px and 767px) */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .modal-content {
+      width: 90%;
+      margin: auto;
+      padding: 1rem;
+    }
+  
+    .modal-header {
+      font-size: 1rem;
+      text-align: center;
+      padding: 0.8rem;
+    }
+  
+    .modal-footer {
+      padding: 0.6rem;
+      text-align: center;
+    }
+  }
+  
+  /* For small phones (screen width below 576px) */
+  @media screen and (max-width: 575px) {
+    .modal-content {
+      width: 95%;
+      margin: auto;
+      padding: 0.8rem;
+      border-radius: 8px;
+    }
+    .container{
+        justify-content: center;
+    }
+    .side-header{
+        margin-right:30%;
+    }
+  
+    .modal-header {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+      text-align: center;
+    }
+  
+    .modal-footer {
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .add-schedule{
+        height: 10%;
+    }
+    .mgn{
+        width: 300px;
+    }
+  }
+  

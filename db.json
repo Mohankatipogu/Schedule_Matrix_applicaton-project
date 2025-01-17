@@ -19,108 +19,15 @@
   },
   "Schedules": [
     {
-      "id": 1,
-      "title": "Institute",
-      "todos": [
-        {
-          "task": "do nopthing",
-          "status": "todo",
-          "id": "t2"
-        },
-        {
-          "task": "Mongo db",
-          "status": "done",
-          "id": "t3"
-        },
-        {
-          "task": "Html",
-          "status": "doing",
-          "id": "t4"
-        },
-        {
-          "task": "Css",
-          "status": "done",
-          "id": "t5"
-        },
-        {
-          "task": "krbikjn",
-          "status": "todo",
-          "id": "t6"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Accounts",
-      "todos": [
-        {
-          "task": "Mohan",
-          "status": "todo",
-          "id": "t1"
-        },
-        {
-          "task": "Statement",
-          "status": "doing",
-          "id": "t2"
-        },
-        {
-          "task": "CA",
-          "status": "done",
-          "id": "t3"
-        },
-        {
-          "task": "what do you wnat",
-          "status": "done",
-          "id": "t5"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "title": "Market",
       "todos": [
         {
-          "task": "Carate",
+          "task": "Karthik",
           "status": "doing",
           "id": "t1"
-        },
-        {
-          "task": "Tamoto",
-          "status": "todo",
-          "id": "t2"
-        },
-        {
-          "task": "Beans",
-          "status": "todo",
-          "id": "t3"
-        }
-      ]
-    },
-    {
-      "title": "School",
-      "todos": [
-        {
-          "task": "Nothing",
-          "status": "todo",
-          "id": "t1"
-        },
-        {
-          "task": "books",
-          "status": "todo",
-          "id": "t2"
-        },
-        {
-          "task": "pens",
-          "status": "todo",
-          "id": "t3"
-        },
-        {
-          "task": "stationary box",
-          "status": "todo",
-          "id": "t4"
         }
       ],
-      "id": 4
+      "id": 2
     }
   ]
 }

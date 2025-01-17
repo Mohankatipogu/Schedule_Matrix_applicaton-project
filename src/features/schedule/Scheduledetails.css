@@ -1,0 +1,72 @@
+/* For tablets (screen width between 768px and 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      margin-left: 20%; /* Adjust heading alignment */
+      font-size: 1.5rem; /* Reduce font size */
+    }
+  
+    .add-todo {
+      width: 80%; /* Adjust input width */
+      height: 45px; /* Adjust input height */
+      margin-left: 10%; /* Center input */
+      border-radius: 8px;
+    }
+  
+    button {
+      height: 45px;
+      border-radius: 8px;
+      font-size: 0.9rem; /* Reduce font size */
+      margin-left: 5%; /* Adjust button position */
+    }
+
+  }
+  
+  /* For large phones (screen width between 576px and 767px) */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    h1 {
+      margin-left: 10%; /* Center heading */
+      font-size: 1.3rem; /* Reduce font size further */
+    }
+  
+    .add-todo {
+      width: 90%; /* Increase input width */
+      height: 40px; /* Adjust input height */
+      margin-left: 5%; /* Center input */
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      height: 40px;
+      border-radius: 6px;
+      font-size: 0.85rem; /* Reduce font size */
+      margin-left: 2%;
+    }
+  }
+  
+  /* For small phones (screen width below 576px) */
+  @media screen and (max-width: 575px) {
+    h1 {
+      margin-left: 0; /* Center heading */
+      text-align: center; /* Align heading to center */
+      font-size: 1.1rem; /* Adjust font size */
+    }
+  
+    .add-todo {
+      width: 95%; /* Maximize input width */
+      height: 35px; /* Adjust input height */
+      margin: 0 auto; /* Center input */
+      border-radius: 6px;
+      font-size: 0.8rem;
+    }
+  
+    button {
+      height: 35px;
+      width: 95%; /* Full-width button */
+      border-radius: 6px;
+      font-size: 0.8rem; /* Adjust font size */
+      margin: 0.5rem auto; /* Center button */
+    }
+
+  }
+  

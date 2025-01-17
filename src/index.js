@@ -8,8 +8,6 @@ import { store } from './app/store';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import Schedule from './features/schedule/schedule';
 import ScheduleDetails from './features/schedule/ScheduleDetails';

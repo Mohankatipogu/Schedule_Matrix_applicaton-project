@@ -19,3 +19,46 @@
     background: #f8f9fa;
     border-top: 2px solid #e9ecef;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .card {
+      margin: 1rem auto; 
+      padding: 1rem;
+      width: 80%;
+    }
+  
+    .card-header, .card-footer {
+      font-size: 1rem; 
+    }
+  }
+  
+  /* For large phones (screen width between 576px and 767px) */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .card {
+      margin: 0.8rem auto; /* Reduce spacing between cards */
+      padding: 0.5px !important;
+      width: 90%; 
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .card-header, .card-footer {
+      font-size: 0.9rem; /* Slightly reduce font size */
+      text-align: center;
+    }
+  }
+  
+  /* For small phones (screen width below 576px) */
+  @media screen and (max-width: 575px) {
+    .card {
+      margin: 0.5rem auto !important;
+      padding: 0.5rem !important;
+      width: 95% !important; /* Maximize available screen space */
+      border-radius: 8px !important; /* Slightly reduce border radius */
+    }
+  
+    .card-header, .card-footer {
+      font-size: 0.85rem;
+      text-align: center; 
+    }
+  }
+  

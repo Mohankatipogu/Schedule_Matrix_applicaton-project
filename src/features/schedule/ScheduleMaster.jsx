@@ -13,7 +13,7 @@ function ScheduleMaster(){
     }
     return(
         <div>
-        <div className="container">
+        <div>
             <div className="d-flex">
            
          {
@@ -28,7 +28,10 @@ function ScheduleMaster(){
          {
              !isLoading && data?.map((cards)=>{
                  return(
-                     <ScheduleCards key={cards.id} cards={cards}></ScheduleCards>
+                    <div>
+
+                        <ScheduleCards key={cards.id} cards={cards}></ScheduleCards>
+                    </div>
                     )
                 })
             }

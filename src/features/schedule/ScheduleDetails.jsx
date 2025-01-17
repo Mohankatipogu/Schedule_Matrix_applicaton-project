@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAddTodoMutation, useGetSheduleListByIdQuery, useLazyGetSheduleListByIdQuery } from '../../services/scheduleApi';
 import StatusSchedule from './StatusSchedule';
-
+import "./Scheduledetails.css"
 function ScheduleDetails(){
     var {id}=useParams()
     console.log(id)
@@ -38,8 +38,8 @@ function ScheduleDetails(){
                 </div>
               </div>
             }
-            <input type="text" onChange={(e)=>{setNewschedule(e.target.value)}}  style={{width:'60%',height:"50px",borderRadius:"10px",marginLeft:"20%"}}/>
-            <button className='m-3' onClick={()=>{AddTodo()}} style={{background:"#006BFF", borderRadius:"10px",height:"50px" }}>Add Shedule</button>
+            <input type="text" onChange={(e)=>{setNewschedule(e.target.value)}}  style={{width:'60%',height:"50px",borderRadius:"10px",marginLeft:"20%"}} className='add-todo'/>
+            <button className='m-3 Add-btn' onClick={()=>{AddTodo()}} style={{background:"#006BFF", borderRadius:"10px",height:"50px" }} >Add Shedule</button>
             <div className='d-flex justify-content-center mb-5'>
                             <StatusSchedule todolist={data} type="todo"></StatusSchedule>
                             <StatusSchedule todolist={data} type="done"></StatusSchedule>
