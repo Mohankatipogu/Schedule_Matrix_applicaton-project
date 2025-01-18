@@ -2,7 +2,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const scheduleApi = createApi({
   reducerPath: 'scheduleApi',
- baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/Schedules' }),
+ baseQuery: fetchBaseQuery({ baseUrl: 'https://schedule-matrix-applicaton-project.onrender.com' }),
 
   endpoints: (builder) => ({
     addTodo: builder.mutation({
