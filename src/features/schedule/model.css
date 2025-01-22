@@ -12,16 +12,15 @@
 .modal-footer {
     border-top: none;
 }
-/* For tablets (screen width between 768px and 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .modal-content {
-      width: 80%; /* Reduce width for better fit */
+      width: 80%;
       margin: auto;
       padding: 1rem;
     }
   
     .modal-header {
-      font-size: 1.2rem; /* Adjust font size */
+      font-size: 1.2rem;
       padding: 1rem;
     }
   
@@ -30,7 +29,6 @@
     }
   }
   
-  /* For large phones (screen width between 576px and 767px) */
   @media screen and (min-width: 576px) and (max-width: 767px) {
     .modal-content {
       width: 90%;
@@ -50,7 +48,6 @@
     }
   }
   
-  /* For small phones (screen width below 576px) */
   @media screen and (max-width: 575px) {
     .modal-content {
       width: 95%;

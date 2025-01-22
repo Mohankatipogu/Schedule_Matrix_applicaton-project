@@ -11,22 +11,47 @@ function ScheduleDetails(){
     let [newschedule,setNewschedule]=useState('')
     var [addTodoFn]=useAddTodoMutation()
     var [scheduleFn]=useLazyGetSheduleListByIdQuery()
-   async function AddTodo(){
-         var temp=JSON.parse(JSON.stringify(data))
-         console.log(temp)
-         temp.todos.push({task:newschedule,status:'todo',id:`t${data?.todos?.length+1}`});
-         console.log(newschedule)
-        //  addTodoFn(temp).then(()=>{
-        //      scheduleFn(id)
-        //  })//Async operations in event handlers.
-      await addTodoFn(temp)
-      scheduleFn(id);
+  //  async function AddTodo(){
+  //        var temp=JSON.parse(JSON.stringify(data))
+  //        console.log(temp)
+  //        temp.todos.push({task:newschedule,status:'todo',id:`t${data?.todos?.length+1}`});
+  //        console.log(newschedule)
+  //       //  addTodoFn(temp).then(()=>{
+  //       //      scheduleFn(id)
+  //       //  })//Async operations in event handlers.
+  //     await addTodoFn(temp)
+  //     scheduleFn(id);
+  //   }
+  async function AddTodo() {
+    if (!newschedule.trim()) {
+      alert("Please enter a valid schedule name.");
+      return;
     }
+  
+    // Create a deep copy of the current schedule data
+    const temp = { ...data, todos: [...data.todos] };
+  
+    // Push the new task into the todos array
+    temp.todos.push({
+      task: newschedule,
+      status: "todo",
+      id: `t${data?.todos?.length + 1}`, // Generate unique ID
+    });
+  
+    console.log("Updated Schedule:", temp);
+  
+    // Call API to update the schedule
+    await addTodoFn(temp);
+  
+    // Refetch or refresh the schedule
+    scheduleFn(id);
+  }
+  
      async function deleteFn(i){
         var temp=JSON.parse(JSON.stringify(data))
         temp.todos.splice(i,1)
        await addTodoFn(temp)
-        scheduleFn(id);
+        await scheduleFn(id);
     }
     return(
         <div>

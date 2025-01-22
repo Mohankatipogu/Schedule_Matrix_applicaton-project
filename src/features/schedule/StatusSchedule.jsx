@@ -34,10 +34,26 @@ function StatusSchedule({todolist,type}){
             <h3 style={{textAlign:'center',background:'#608BC1'}}>{type.toUpperCase()}</h3>
             <ul onDragOver={(ev)=>{ev.preventDefault()}} onDrop={(ev)=>{handleDrop(ev)}} className="p-0 h-100">
             {
-                todolist?.todos?.filter(todo=>todo.status==type).map((t,i)=>{
-                    return <li id={`${t.task}${i}`} draggable='true' onDragStart={(event)=>{handleDragStar(event,t.id)}} className=" rounded p-2 m-2" style={{listStyle:'none',background:"#006A67",color:'white'}}>{t.task}
+                // todolist?.todos?.filter(todo=>todo.status==type).map((t,i)=>{
+                //     return <li id={`${t.task}${i}`} draggable='true' onDragStart={(event)=>{handleDragStar(event,t.id)}} className=" rounded p-2 m-2" style={{listStyle:'none',background:"#006A67",color:'white'}}>{t.task}
+                //     </li>
+                // })
+                todolist?.todos
+                ?.filter((todo) => todo.status === type)
+                .map((t, i) => (
+                    <li
+                    id={`${t.task}${i}`}
+                    draggable="true"
+                    onDragStart={(event) => {
+                        handleDragStar(event, t.id);
+                    }}
+                    className="rounded p-2 m-2"
+                    style={{ listStyle: "none", background: "#006A67", color: "white" }}
+                    >
+                    {t.task}
                     </li>
-                })
+                ))
+
             }
             </ul>
         </div>

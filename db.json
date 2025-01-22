@@ -17,17 +17,5 @@
     "name": "typicode",
     "id": 1
   },
-  "Schedules": [
-    {
-      "title": "Market",
-      "todos": [
-        {
-          "task": "Karthik",
-          "status": "doing",
-          "id": "t1"
-        }
-      ],
-      "id": 2
-    }
-  ]
+  "Schedules": []
 }
